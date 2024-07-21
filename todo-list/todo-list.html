@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="todo-list.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ToDo List</h1>
+        <form id="formTask">
+            <div class="input-group">
+                <input id="inputTask" type="text" placeholder="Enter task description" required/>
+                <select id="selectStatus" required>
+                    <option value="Pending">Pending</option>
+                    <option value="In Progress">In Progress</option>
+                    <option value="Completed">Completed</option>
+                </select>
+            </div>
+            <input id="inputCategory" type="text" placeholder="Enter category" required/>
+            <button type="submit">Add Task</button>
+        </form>
+        <ul id="tasks"></ul>
+        <button id="saveBtn" class="save-btn">Save</button>
+    </div>
+    <script src="todo-list.js"></script>
+</body>
+</html>
